@@ -9,7 +9,6 @@ public class metodoBubbleMejorado {
         if (!isDes) { 
             for (int i = 0; i < n - 1; i++) {
                 for (int j =0; j < n - 1; j++) {
-                    // Mostrar comparación y los índices i y j
                     System.out.println("Comparando: arreglo[" + i + "] = " + arreglo[i] + " con arreglo[" + j + "] = " + arreglo[j]);
                     contComp++;
                     if (arreglo[i] > arreglo[j]) {
@@ -19,7 +18,7 @@ public class metodoBubbleMejorado {
                         contCambios++;
                     }
 
-                    if (pas) { // Mostrar pasos si 'pas' es true
+                    if (pas) { 
                         System.out.print("Paso: ");
                         imprArregloBM(arreglo);
                     }
@@ -31,7 +30,6 @@ public class metodoBubbleMejorado {
                     if (pas) {
                         System.out.println("Comparando: arreglo[" + i + "] = " + arreglo[i] + " con arreglo[" + j + "] = " + arreglo[j]);
                     }
-                    // Mostrar comparación y los índices i y j
                     
                     contComp++;
                     if (arreglo[i] < arreglo[j]) {
@@ -41,7 +39,7 @@ public class metodoBubbleMejorado {
                         contCambios++;
                     }
 
-                    if (pas) { // Mostrar pasos si 'pas' es true
+                    if (pas) {
                         System.out.print("Paso: ");
                         imprArregloBM(arreglo);
                     }

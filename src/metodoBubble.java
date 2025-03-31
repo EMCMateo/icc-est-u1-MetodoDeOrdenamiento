@@ -13,10 +13,10 @@ public class metodoBubble {
                     System.out.println("Comparando: arreglo[" + j + "] = " + arreglo[j] + " con arreglo[" + (j + 1) + "] = " + arreglo[j + 1]);
                 }
                 contComp++;
-                if (arreglo[j] > arreglo[j + 1]) {
+                if (arreglo[j] > arreglo[j +1]) {
                     aux = arreglo[j];
-                    arreglo[j] = arreglo[j + 1];
-                    arreglo[j + 1] = aux;
+                    arreglo[j] =arreglo[j+1];
+                    arreglo[j +1] = aux;
                     contCambios++;
 
                     if (pas) { 
@@ -25,10 +25,14 @@ public class metodoBubble {
                 }
 
                 if (pas) {
+                    System.out.println("Cambio realizado: " + arreglo[j] + " con  " + arreglo[j + 1]);
                     System.out.print("Paso: ");
                     imprArreglo(arreglo);
-                }
+                }  else if (pas) {
+                    System.out.println("No se realiza cambio entre arreglo[" + j + "] = " + arreglo[j] + " y arreglo[" + (j + 1) + "] = " + arreglo[j + 1]);
+                
             }
+        }
         }
     } else { // Orden Descendente
         for (int i = 0; i < n - 1; i++) {
@@ -37,10 +41,10 @@ public class metodoBubble {
                     System.out.println("Comparando: arreglo[" + j + "] = " + arreglo[j] + " con arreglo[" + (j + 1) + "] = " + arreglo[j + 1]);
                 }
                 contComp++;
-                if (arreglo[j] < arreglo[j + 1]) {
+                if (arreglo[j] < arreglo[j +1]) {
                     aux = arreglo[j];
-                    arreglo[j] = arreglo[j + 1];
-                    arreglo[j + 1] = aux;
+                    arreglo[j] =arreglo[j+1];
+                    arreglo[j +1] = aux;
                     contCambios++;
 
                     if (pas) {

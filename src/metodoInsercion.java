@@ -2,8 +2,8 @@ public class metodoInsercion {
 
     public int[] ordenar(int[] arreglo, boolean isDes, boolean pas) {
         int tam =arreglo.length;
-        int contComp = 0; //comparaciones
-        int contCambios = 0;//cambios 
+        int contComp= 0; //Comparaciones
+        int contCambios = 0; //Cambios
 
         for (int i = 1; i < tam; i++) {
             int aux = arreglo[i];

@@ -21,11 +21,16 @@ public class metodoSelection {
             }
 
             if (extremoIndex !=i) {
+                if (pas) {
+                    System.out.println("Intercambiando: arreglo[" + i + "] = " + arreglo[i] + " con arreglo[" + extremoIndex + "] = " + arreglo[extremoIndex]);
+                }
                 aux =arreglo[extremoIndex];
                 arreglo[extremoIndex] =arreglo[i];
                 arreglo[i]= aux;
                 contCambios++;
-            }
+            }else if (pas) {
+                    System.out.println("No se realiza cambio en la posición " + i + " (arreglo[" + i + "] = " + arreglo[i] + ")");
+                }
 
             if (pas) {
                 System.out.print("Paso: ");

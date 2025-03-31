@@ -40,7 +40,6 @@ public class App {
                 case 1:
                     System.out.println("-----------------------------------------------------------------");
                     System.out.println("Vector inicial: " + arreglo.toString());
-                    System.out.println("Metodo Bubble: ");
                     metodoBubble metodoBurbujaClase = new metodoBubble(); //Instanciar clase, la clase  metodo bubble no puede estar en static
                     metodoBubble imprBubble = new metodoBubble();
                     int xBubble [] = metodoBurbujaClase.ordenar(arreglo, true, pas);
